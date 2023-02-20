@@ -1,1 +1,11 @@
-Upasana
+1. Upasana:
+	Array.prototype.slice():
+
+2. kalaivani:
+	Array.prototype.splice():
+
+3. Akileswari:
+	Array.prototype.unshift():
+
+4. Jeba Danita:
+	Array.prototype.values():
