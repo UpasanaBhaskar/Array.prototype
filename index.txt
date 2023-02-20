@@ -1,8 +1,40 @@
 1. Upasana:
-	Array.prototype.slice():
-	Array.prototype.splice():
-	Array.prototype.unshift():
-	Array.prototype.values():
+	
+--> Array.prototype.slice():
+		This method returns a shallow copy of a portion of an array.
+			Syntax -> slice(start, end)
+				Example : let myArray = ['a', 'b', 'c', 'd', 'e'];
+						  let newArray1 = myArray.slice(1, 4); // Output: ['b', 'c', 'd']
+						  let newArray2 = myArray.slice(2); // Output: ['c', 'd', 'e']
+						  let newArray3 = myArray.slice(); // Output: a shallow copy of the entire array
+
+-->	Array.prototype.splice():
+		This method allows to add, remove, or replace elements in an array.
+		 	Syntax -> splice(start, deleteCount, item1, item2, ...)
+				Example : let array = [1, 2, 3, 4];
+					      let arr1 = array.splice(2, 0, 5, 6); // Output: [1, 2, 5, 6, 3, 4]
+					      let arr2 = array.splice(2, 2); // Output: [1, 2]
+					      let arr3 = array.splice(1, 2, 'a', 'b', 'c'); // Output: [1, 'a', 'b', 'c', 4]
+
+--> Array.prototype.unshift():
+		This method allows to add one or more elements to the beginning of an array.
+			Syntax -> unshift(element1, element2, ..., elementN)
+				Example : let array = [1, 2, 3];
+					  	  let array1 = array.unshift(0); // Output: [0, 1, 2, 3]
+					      let array2 = array.unshift(-2, -1, 0); // Output: [-2, -1, 0, 1, 2, 3]
+					  	  let array3 = [4, 5, 6]; 
+					  	  let array4 = array1.unshift(...array2); // Output: [4, 5, 6, 1, 2, 3]
+
+--> Array.prototype.values():
+		This method returns an iterator object that contains the values of an array.
+			Syntax -> values()
+				Example	: let array = [1, 2, 3];
+						  let valuesIterator = array.values();
+						  console.log(valuesIterator.next()); // Output: { value: 1, done: false }
+						  console.log(valuesIterator.next()); // Output: { value: 2, done: false }
+ 						  console.log(valuesIterator.next()); // Output: { value: 3, done: false }
+						  console.log(valuesIterator.next()); // Output: { value: undefined, done: true }
+
 
 2. kalaivani:
 	Array.prototype.slice():
