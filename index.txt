@@ -1,11 +1,24 @@
 1. Upasana:
 	Array.prototype.slice():
+	Array.prototype.splice():
+	Array.prototype.unshift():
+	Array.prototype.values():
 
 2. kalaivani:
+	Array.prototype.slice():
 	Array.prototype.splice():
+	Array.prototype.unshift():
+	Array.prototype.values():
 
 3. Akileswari:
+	Array.prototype.slice():
+	Array.prototype.splice():
 	Array.prototype.unshift():
+	Array.prototype.values():
+
 
 4. Jeba Danita:
+	Array.prototype.slice():
+	Array.prototype.splice():
+	Array.prototype.unshift():
 	Array.prototype.values():
