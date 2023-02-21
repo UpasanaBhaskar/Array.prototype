@@ -150,7 +150,49 @@
 
 
 4. Jeba Danita:
-	Array.prototype.slice():
-	Array.prototype.splice():
-	Array.prototype.unshift():
-	Array.prototype.values():
+	----> Array.prototype.slice():
+	    -> Definition : The slice() method returns a shallow copy of a portion of an array into a new array object selected from start to end. The start and end represent the index of items in that array.
+		-> Syntax : slice(start, end)
+		-> Example : const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+		             console.log(animals.slice(2)); // Output: Array ["camel", "duck", "elephant"]
+		             console.log(animals.slice(2, 4)); // Output: Array ["camel", "duck"]
+		             console.log(animals.slice(1, 5)); // Output: Array ["bison", "camel", "duck", "elephant"]
+		
+		
+    ----> Array.prototype.splice():
+	    -> Definition : The splice() method changes the contents of an array by removing or replacing the existing elements and/or adding new elements in that place where the element was removed.
+		-> Syntax : splice(start, deleteCount, item1)
+		-> Example : const months = ['Jan', 'March', 'April', 'June'];
+                     months.splice(1, 0, 'Feb'); // Inserts at index 1
+			         console.log(months); //Output : Array ["Jan", "Feb", "March", "April", "June"] 
+			    
+			    
+    ----> Array.prototype.unshift():
+	    -> Definition : The unshift() method adds one or more elements to the beginning of an array and returns the new length of the array.
+		-> Syntax : unshift(element0, element1,......, elementn)
+		-> Example : const array1 = [1, 2, 3]
+		             console.log(array1.unshift(4, 5));
+		             console.log(array1); // Output: Array [4, 5, 1, 2, 3]
+			     
+			     
+    ----> Array.prototype.values():
+        -> Definition : The values() method returns a new array iterator object that iterates the value of each item in the array.
+		-> Syntax : values()
+	    -> Example : const array1 = ['a', 'b', 'c'];
+                     const iterator = array1.values();
+			         for (const value of iterator) {
+			         console.log(value);
+			         } // Output: "a"
+                       // Output: "b"
+                       // Output: "c"
+			       
+			     const arr = ["a", "b", "c", "d", "e"]; 
+			     const iterator = arr.values();
+			     iterator.next(); // { value: "a", done: false }
+			     iterator.next(); // { value: "b", done: false }
+			     iterator.next(); // { value: "c", done: false }
+			     iterator.next(); // { value: "d", done: false }
+			     iterator.next(); // { value: "e", done: false }
+			     iterator.next(); // { value: undefined, done: true }
+
+
