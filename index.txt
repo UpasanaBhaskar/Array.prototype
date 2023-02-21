@@ -51,10 +51,35 @@
 
 
 	Array.prototype.splice():
-	    
-	Array.prototype.unshift():
-	Array.prototype.values():
+	    The method add, remove or overwrite the array elements.
+		Syntax: array.splice(index, howmany, item1, ....., itemX)
+		myArray = ["slice", "splice", "unshift", "values"];
+		        The index parameter specifies the position to add or remove element. Negative value defines the position from the end of the array.
+				howmany - number of items to be removed.
+				item1 to itemX - specify the new elements to be added.
+				      let ans = myArray.splice(3, 3, "fill", "some", "shift");   //output: ["slice", "splice", "unshift", "fill", "some", "shift", "values"];
+					  let ans = myArray.splice(2,1);  output: ["slice", "splice", "fill", "some", "shift", "values"]; 
 
+	Array.prototype.unshift():
+	    The method adds new elements to the beginning of an array.
+		    Syntax: array.unshift(item1, item2,...,itemX);
+			    item1,..itemX - The items to add to the array.
+		myArray = ["danita", "akila"];
+		let ans = myArray.unshift("upasana", "kalai");   //output: ["upasana", "kalai", "danita", "akila"];
+
+	Array.prototype.values():
+	    It returns a array iterator object that iterates the value of each value in the array.
+            Syntax: array.values();
+		myArray = [1, 2, 3];
+		let ans = myArray.values();
+        for (let value of ans) {
+            console.log(value);
+        }
+		//output 
+		1
+		2
+		3
+		
 3. Akileswari:
 	Array.prototype.slice():
 	Array.prototype.splice():
