@@ -38,7 +38,8 @@
 
 2. kalaivani:
 	Array.prototype.slice():
-	      The method returns selected elements in an array(as a new array).         
+	      The method returns selected elements in an array(as a new array). 
+		  syntax:         
 	Array.prototype.splice():
 	Array.prototype.unshift():
 	Array.prototype.values():
